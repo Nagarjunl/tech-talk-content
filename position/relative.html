@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* * {
+            border: 1px solid red;
+        } */
+
+        .relative-element {
+            position: relative;
+            top: 20px;
+            /* Moves the element 20px down from its original position */
+            left: 30px;
+            /* Moves the element 30px to the right from its original position */
+            background-color: lightgreen;
+            padding: 20px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+        1. Normal Flow: The element is positioned according to the normal document flow.
+        2. Offset from Normal Position: The element can be moved relative to its original position
+           using the top, right, bottom, and left properties.
+        3. Affects Layout: The element still occupies its original space in the document, 
+           so it affects the layout of subsequent elements.
+        4. Creates a Containing Block: For absolutely positioned descendants, a relatively
+            positioned element serves as a containing block.
+    -->
+
+    <!-- <div style="position: relative; top: 20px;"> 1st div</div>
+
+    <div style="margin-top:20px"> with position top and left</div>
+    <div style="position: relative;">3rd div</div>
+ -->
+
+    <!-- <div class="relative-element">I am a relative element</div> -->
+
+    <div style="height: 200px;background-color: blue;">
+        Scroll down to see that the fixed element stays in place.
+    </div>
+
+    <div style="height: 100px;background-color: red; margin-top: 40px;">
+
+        <div class="relative-element">I am a relative element</div>
+
+    </div>
+
+
+
+</body>
+
+</html>

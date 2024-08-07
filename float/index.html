@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .float-left {
+            float: left;
+            width: 200px;
+            height: 300px;
+            margin: 10px;
+            background-color: lightblue;
+        }
+
+        .float-right {
+            float: right;
+            width: 200px;
+            height: 100px;
+            margin: 10px;
+            background-color: lightgreen;
+        }
+
+        .clear-left {
+            clear: left;
+        }
+
+        .clear-right {
+            clear: right;
+        }
+
+        .clear-both {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="float-left">Float: left</div>
+        <div class="float-right">Float: right</div>
+        <div class="clear-both"> </div>
+    </div>
+
+    <div class="container" style="float: inline-start; width: 50%;">
+        <div class="float-left">Float: left</div>
+        <div class="float-right">Float: right</div>
+        <p>
+            This is some text that will wrap around the floated elements. The floated elements take up space, causing
+            the text to flow around them.
+            The clear property ensures that the paragraph starts below the floated elements.
+        </p>
+    </div>
+    <div class="container" style="float: inline-end;height: 600px;">
+        <div class="float-left">Float: left</div>
+        <div class="float-right">Float: right</div>
+    </div>
+
+    <p style="clear: both;">
+        This is some text that will wrap around the floated elements. The floated elements take up space, causing
+        the text to flow around them.
+        The clear property ensures that the paragraph starts below the floated elements.
+    </p>
+</body>
+
+</html>

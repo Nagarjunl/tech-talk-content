@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Before - After </title>
+
+    <style>
+        .button::before {
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: red;
+            margin-right: 5px;
+        }
+
+        .button::after {
+            content: "→";
+            margin-left: 5px;
+        }
+
+        /* ---------------------------------------------- */
+
+        .underline {
+            display: inline-block;
+        }
+
+        .underline::after {
+            content: "";
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: red;
+            position: relative;
+            bottom: -6px;
+        }
+
+        /* ---------------------------------------------- */
+
+        blockquote {
+            font-size: 3em;
+        }
+
+        blockquote::before {
+            content: "“";
+            font-size: 1em;
+            /* vertical-align: -0.4em; */
+        }
+
+        blockquote::after {
+            content: "”";
+            font-size: 1em;
+            /* vertical-align: -0.4em; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="button">hai</div>
+
+    <u>
+        <h1>Document</h1>
+    </u>
+
+    <h1 class="underline">Document</h1>
+
+    <blockquote> Hello Students </blockquote>
+
+
+
+</body>
+
+</html>

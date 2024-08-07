@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip</title>
+    <style>
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltip::before {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 100%;
+            background-color: black;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s;
+        }
+
+        .tooltip:hover::before {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        ul.custom-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul.custom-list li::before {
+            content: "★";
+            color: gold;
+            font-size: 1.2em;
+            margin-right: 10px;
+        }
+
+        .input-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .input-container input {
+            padding: 5px 30px;
+            /* Adjust based on icon width */
+        }
+
+        .input-container::before {
+            content: "🔍";
+            position: absolute;
+            top: 15%;
+            left: 2px;
+            pointer-events: none;
+        }
+
+        .ribbon {
+            position: relative;
+            padding: 10px;
+            background-color: #ddd;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <br />
+    <br />
+    <br />
+
+    <span class="tooltip" data-tooltip="This is a tooltip!">
+        Hover over me
+        <!-- <p class="tooltip"> paragraph</p> -->
+    </span>
+
+    <br />
+    <br />
+    <br />
+
+    <ul class="custom-list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <br />
+    <br />
+    <br />
+
+
+    <div class="input-container">
+        <input type="text" placeholder="Search...">
+    </div>
+
+</body>
+
+</html>

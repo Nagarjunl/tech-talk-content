@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Responsive Web Design </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        .container {
+            width: 100%;
+            width: 900px;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: bisque;
+        }
+
+        .heading-1 {
+            font-size: 50px;
+        }
+
+        .heading-2 {
+            font-size: 40px;
+        }
+
+        /* Medium screens */
+        @media (min-width: 601px) and (max-width: 900px) {
+            .heading-1 {
+                font-size: 25px;
+            }
+
+            .heading-2 {
+                font-size: 20px;
+            }
+        }
+
+        /* Small screens */
+        @media (max-width: 600px) {
+            .heading-1 {
+                font-size: 20px;
+            }
+
+            .heading-2 {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="heading-1"> Do you understand this concept? </h1>
+        <h2 class="heading-2"> If you do i am happpy. </h2>
+    </div>
+
+</body>
+
+</html>

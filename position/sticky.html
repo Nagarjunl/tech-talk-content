@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .container {
+            height: 2000px;
+            /* To enable scrolling */
+            background-color: lightgray;
+            padding: 20px;
+        }
+
+        .bottom-container {
+            height: 1000px;
+            /* To enable scrolling */
+            background-color: lightseagreen;
+            padding: 20px;
+        }
+
+        .sticky-element {
+            position: sticky;
+            top: 10px;
+            /* Becomes fixed 10px from the top of the viewport */
+            background-color: lightblue;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .sticky-in-top {
+            position: sticky;
+            top: 100px;
+            /* Becomes fixed 10px from the top of the viewport */
+            background-color: lightblue;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--
+        1. Hybrid Positioning: Sticky positioning is a mix between relative and fixed positioning.
+    -->
+    <div class="sticky-in-top"> Sticky in top</div>
+
+
+    <div class="container">
+        <p>Scroll down to see the sticky effect.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim
+            sit amet, adipiscing nec, ultricies sed, dolor.</p>
+        <p>Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin
+            porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat.</p>
+        <p>Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in
+            risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue.</p>
+
+        <div class="sticky-element"> Sticky in within container</div>
+
+        <p>Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales.
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh.</p>
+        <p>Maecenas ultricies. Sed justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper
+            est, vitae luctus metus libero eu augue.</p>
+    </div>
+
+    <div class="bottom-container">
+        Bottom Container
+    </div>
+
+    <div class="sticky-element"> Sticky in middle</div>
+
+
+    <div class="bottom-container">
+        Bottom Container
+    </div>
+
+</body>
+
+</html>

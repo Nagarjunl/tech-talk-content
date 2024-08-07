@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        .internal-color {
+            color: green;
+        }
+
+        .internal-color-with-important {
+            color: green !important;
+        }
+
+        h2 {
+            color: yellow;
+        }
+
+        h2.element-color {
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        1'st priority - Inline
+        2'nd priority - Internal
+        3'rd priority - external
+    -->
+
+    <h1 class="internal-color" style="color:red"> Inline vs Internal</h1> <!-- inline vs internal style -->
+    <h1 class="external-color internal-color"> Internal vs External</h1> <!-- internal vs external style -->
+
+    <br />
+
+    <!-- 
+        !important also works in same manner
+            1'st priority - Inline
+            2'nd priority - Internal
+            3'rd priority - external
+    -->
+
+    <h1 class="internal-color-with-important" style="color:red !important"> Inline vs Internal using - !important</h1>
+    <!-- inline vs internal using - !important -->
+    <h1 class="external-color-with-important internal-color-with-important"> Inline vs Internal using - !important</h1>
+    <!-- internal vs external using - !important -->
+
+    <br />
+
+    <h2> Element vs Internal </h2> <!-- element vs internal -->
+    <h2> Element vs external </h2> <!-- element vs internal -->
+    <h2 class="internal-color element-color"> Internal vs Element-Internal </h2> <!-- Internal vs Element-Internal -->
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Target Attribute Example</title>
+</head>
+
+<body>
+    <h1>Target Attribute Example</h1>
+
+    <h2>Main Page</h2>
+    <p>This is the main page. Below are two links that demonstrate the difference between <code>_self</code> and
+        <code>_parent</code>.
+    </p>
+
+    <!-- <iframe width="100%" height="600" title="Example iframe"> -->
+
+    <iframe src="iframe.html" width="80%" height="600" title="Example iframe"></iframe>
+
+    <!-- </iframe> -->
+
+    <h2>Links:</h2>
+    <ul>
+        <li><a href="https://www.example.com" target="_self">Open in Same Frame (self)</a></li>
+        <li><a href="https://www.example.com" target="_parent">Open in Parent Frame (parent)</a></li>
+    </ul>
+</body>
+
+</html>

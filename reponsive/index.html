@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Responsive Web Design </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .column {
+            float: left;
+            width: 25%;
+            background-color: aquamarine;
+            padding: 5px 15px;
+            border: 1px solid #000000;
+        }
+
+        /* Medium screens */
+        /* min = greater than 601px ---- max lessthan 900px */
+        @media (min-width: 601px) and (max-width: 900px) {
+            .column {
+                width: 50%;
+                background-color: azure
+            }
+        }
+
+        @media (max-width: 600px) {
+            .column {
+                width: 100%;
+                background-color: antiquewhite
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="column">
+            Column One
+        </div>
+        <div class="column">
+            Column Two
+        </div>
+        <div class="column">
+            Column Three
+        </div>
+        <div class="column">
+            Column Four
+        </div>
+    </div>
+
+</body>
+
+</html>

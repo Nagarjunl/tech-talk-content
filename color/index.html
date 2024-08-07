@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> CSS Colors</title>
+    <style>
+        :root {
+            --main-bg-color: #FF5733;
+            --white: #FFFFFF;
+            --black: #000000;
+        }
+
+        .custom-color {
+            background-color: var(--main-bg-color);
+        }
+
+        .custom-white {
+            background-color: var(--white);
+        }
+
+        .custom-black {
+            background-color: var(--black);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1> Hexadecimal (Hex) Notation: </h1>
+
+    <div style="background-color: #FF5733;">Hex Color</div>
+    <div style="background-color: #FFFFFF;">White</div>
+    <div style="background-color: #000000;">Black</div>
+
+    <br />
+
+    <h1> RGB (Red, Green, Blue): </h1>
+
+    <div style="background-color: rgb(0, 0, 0);">RGB Color</div>
+    <div style="background-color: rgb(255, 255, 255);">White</div>
+    <div style="background-color: rgb(0, 0, 0);">Black</div>
+
+    <br />
+
+    <h1> RGBA (Red, Green, Blue, Alpha): </h1>
+
+    <div style="background-color: rgba(255, 87, 51, 0.5);">RGBA Color</div>
+    <div style="background-color: rgba(255, 255, 255, 0.5);">Semi-Transparent White</div>
+    <div style="background-color: rgba(0, 0, 0, 0.5);">Semi-Transparent Black</div>
+
+
+    <br />
+
+    <h1> HSL (Hue, Saturation, Lightness): </h1>
+
+    <div style="background-color: hsl(9, 100%, 60%);">HSL Color</div>
+    <div style="background-color: hsl(0, 0%, 100%);">White</div>
+    <div style="background-color: hsl(0, 0%, 0%);">Black</div>
+
+    <br />
+
+    <h1>HSLA (Hue, Saturation, Lightness, Alpha):</h1>
+
+    <div style="background-color: hsla(9, 100%, 60%, 0.5);">HSLA Color</div>
+    <div style="background-color: hsla(0, 0%, 100%, 0.5);">Semi-Transparent White</div>
+    <div style="background-color: hsla(0, 0%, 0%, 0.5);">Semi-Transparent Black</div>
+
+    <br />
+
+    <h1>Named Colors:</h1>
+
+    <div style="background-color: orange;">Orange</div>
+    <div style="background-color: white;">White</div>
+    <div style="background-color: black;">Black</div>
+
+    <br />
+
+    <h1>CSS Variables (Custom Properties):</h1>
+
+    <div class="custom-color">Custom Property Color</div>
+    <div class="custom-white">Custom Property White</div>
+    <div class="custom-black">Custom Property Black</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            width: 200px;
+            height: 100px;
+            margin-bottom: 20px;
+            border: 1px solid black;
+        }
+
+        .content {
+            background-color: lightblue;
+            padding: 10px;
+        }
+
+        .hidden-display {
+            display: none;
+        }
+
+        .hidden-visibility {
+            visibility: hidden;
+        }
+
+        .hidden-opacity {
+            opacity: 0.7;
+        }
+
+        .hidden-position {
+            position: absolute;
+            left: -9999px;
+        }
+
+        .hidden-height {
+            height: 0;
+            overflow: hidden;
+        }
+
+        .hidden-clip {
+            clip-path: inset(25%);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="container">
+        <div class="content" style="display: none;">Hidden with display: none;</div>
+    </div>
+
+    <div class="container">
+        <div class="content" style="visibility: none;">Hidden with visibility: hidden;</div>
+    </div> -->
+
+    <div class="container">
+        <div class="content hidden-opacity">Hidden with opacity: 0;</div>
+    </div>
+
+    <!-- <div class="container">
+        <div class="content hidden-position">Hidden with position: absolute; left: -9999px;</div>
+    </div>
+
+    <div class="container">
+        <div class="content hidden-height">Hidden with height: 0; overflow: hidden;</div>
+    </div>
+
+    <div class="container">
+        <div class="content hidden-clip">Hidden with clip-path: inset(50%);</div>
+    </div> -->
+</body>
+
+</html>

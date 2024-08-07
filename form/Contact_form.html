@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>CONTACT FORM</title>
+</head>
+<body>
+    <form action="contact.php" method="POST" enctype="multipart/form-data">
+        <!--First name-->
+        <label for="firstname">Firstname</label>
+        <input type="text" id="firstname" name="firstname" required>
+
+        <!--last name-->
+        <label for="lastname">Lastname</label>
+        <input type="text" id="lastname" name="lastname" ><br><br>
+
+        <!--id number-->
+        <label for="id number ">Id number</label>
+        <input type="number" id="idnumber" name="idnumber"><br><br>
+
+        <!--email  -->
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Password -->
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]+$"  required>
+        <!--^(starting of string)-->
+        <!-- +(preceding character matches the pattern or not),, $(end of string) -->
+
+        <!-- Confirm Password -->
+        <label for="confirm password">Confirm Password</label>
+        <input type="password" id="confirm password" name="confirm password"  pattern="[a-zA-Z0-9]+$"><br><br>
+
+        <!--Date of birth-->
+        <label for="dob">DOB</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <!--Mobile number-->
+        <label for="mobile no">Mobile number</label>
+        <input type="tel" id="mobile no" name="mobile no" pattern="[0-9]{10}"><!--pattern attribute validating the input
+         matches exactly user entered value--><!--here ph no should be 10 digits-->
+
+         <!--Alternate Mobile number-->
+        <label for="alternate mobile no">Alternate Mobile number</label>
+        <input type="tel" id="alternate mobile no" name="alternate mobile no" pattern="[0-9]{10}"><br><br>
+
+        <!--Gender-->
+        <label for="gender">Gender</label>
+        <select name= "gender" id="gender">
+        <option value="male" selected>Male</option>
+        <option value="fmale">Female</option>
+        <option value="other">Other</option>
+        </select><br><br>
+
+        <!--Address-->
+        <label for="Address">Address</label>
+        <input type="textarea" id="Address" name="Address" required><br><br>
+
+        <!--pincode-->
+        <label for="pincode">Pincode</label>
+        <input type="number" id="pincode" name="pincode" pattern="[0-9]{6}" required><br><br>
+
+        <!--radio button-->
+        <label>Disability person</label>
+        <input type="radio" id="yes" name="Disability person" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="Disability person" value="no">
+        <label for="yes">No</label><br><br>
+
+        <!--programming languages-->
+        <label for="languages">programming languages</label>
+        <input type="checkbox" id="java" name="java" value="java">
+        <label for="java">java</label>
+        <input type="checkbox" id="js" name="js" value="js">
+        <label for="js">js</label>
+        <input type="checkbox" id="php" name="php" value="php">
+        <label for="php">php</label><br><br>
+        
+         <!--Nationality-->  
+         <label>Nationality</label>
+        <input type="radio" id="india" name="Nationality" value="india">
+        <label for="india">India</label>
+        <input type="radio" id="others" name="others" value="others">
+        <label for="others">Others</label> <br><br>
+
+         <!--Photo-->
+         <label for="photo">Professional Photo</label>
+         <input type="file" id="photo" name="photo" acept=".png,.pdf,.doc" ><br><br>
+
+         <!-- Submit Button -->
+         <button type="submit">Submit</button>
+
+    </form>
+</body>
+</html>

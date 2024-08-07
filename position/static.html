@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* 
+        top
+        right
+        bottom
+        left */
+
+        .static-element {
+            position: static;
+            /* This is the default, so you don't actually need to set it */
+            background-color: lightblue;
+            padding: 20px;
+            margin: 10px;
+            left: 50px;
+            top: 30px;
+        }
+
+        .relative-element {
+            position: relative;
+            background-color: rgb(8, 241, 160);
+            padding: 20px;
+            margin: 10px;
+            left: 50px;
+            top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="static-element">I am a relative element</div>
+    <div class="relative-element">I am a relative element</div>
+
+</body>
+
+</html>

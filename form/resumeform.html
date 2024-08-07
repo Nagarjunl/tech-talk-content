@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    
+    <title>Resume</title>
+    
+  </head>
+  <body>
+    <h1>Resume Form</h1>
+    <form action="submit.php" method="POST" enctype="multipart/form-data">
+    <hr/>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="Name" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="someone@gmail.com"><br><br>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="Phone" placeholder="123-45-678"><br><br>
+
+      <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br><br>
+
+      <label for="address">Address for communication:</label>
+      <textarea id="address" name="address" rows="4" cols="50"></textarea>
+      <br><br>
+
+      <p>Languages known:</p>
+        <label for="tamil">Tamil</label>
+        <input type="checkbox" id="tamil" name="tamil" value="yes">
+        <label for="english">English</label>
+        <input type="checkbox" id="english" name="english" value="yes">
+        <label for="spanish">Spanish</label>
+        <input type="checkbox" id="spanish" name="spanish" value="yes">
+        <label for="french">French</label>
+        <input type="checkbox" id="french" name="french" value="yes">
+        <br><br>
+
+        <label for="salary">Salary requirements:</label><br><br>
+        <input type="text" id="salary" name="salary"><br><br>
+
+        <label for="start">When can you start?</label><br><br>
+        <input type="text" id="start" name="start"><br><br>
+
+        <label for="experience">Experience:</label>
+        <select id="experience" name="experience">
+            <option value="fresher"> Fresher </option>
+            <option value="0-2years">0-2 years</option>
+            <option value="3years">3 years</option>
+            <option value="5years">More than 5 years</option>
+        </select><br><br>
+
+        <label>Are you willing to relocate?</label><br><br>
+        <input type="radio" id="yes" name="yes" value="yes">
+        <label for="yes">Yes</label><br><br>
+        <input type="radio" id="no" name="no" value="no">
+        <label for="no">No</label><br><br>
+        <input type="radio" id="notsure" name="notsure" value="notsure">
+        <label for="notsure">Not sure</label>
+        <br><br>
+
+        <label for="file">Resume upload:</label>
+        <input type="file" id="file" name="file">
+        <br><br>
+
+        <input type="checkbox" id="agree" name="agree" value="yes">
+        <label for="agree">I agree to the terms and conditions of the company</label>
+        <br><br>
+        
+        <button type="submit">Submit</button>
+
+    </form>
+    
+    <div id="root"></div>
+    
+  </body>
+</html>

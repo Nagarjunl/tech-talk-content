@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .fixed-element {
+            position: fixed;
+            top: 20px;
+            /* 20px from the top of the viewport */
+            right: 20px;
+            /* 20px from the right of the viewport */
+            background-color: lightcoral;
+            padding: 20px;
+        }
+
+        .fixed-element-in-bottom {
+            position: fixed;
+            bottom: 20px;
+            background-color: lightcoral;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 
+    1. The fixed element is positioned relative to the browser window, not any parent element. 
+    2. The element is removed from the normal document flow, so it won't affect the positioning of other elements, 
+       and other elements won't affect its positioning.
+     -->
+
+    <!-- <div class="fixed-element">I am a fixed element</div> -->
+
+    <div style="height: 2000px;background-color: blue; margin-top: 40px;">
+        Scroll down to see that the fixed element stays in place.
+    </div>
+
+    <div style="height: 1000px;background-color: red; margin-top: 40px;">
+        <div class="fixed-element-in-bottom">I am a fixed element</div>
+    </div>
+
+</body>
+
+</html>

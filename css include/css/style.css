@@ -1,0 +1,7 @@
+.external-color {
+    color: blue;
+}
+
+.external-color-with-important {
+    color: blue !important;
+}

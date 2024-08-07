@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .outer-container {
+            position: relative;
+            width: 600px;
+            height: 500px;
+            background-color: lightcoral;
+            margin: 20px;
+        }
+
+        .inner-container {
+            position: fixed;
+            width: 500px;
+            height: 400px;
+            background-color: lightgreen;
+            margin: 20px;
+        }
+
+        .most-inner-container {
+            position: static;
+            width: 400px;
+            height: 300px;
+            background-color: lightblue;
+            margin: 20px;
+        }
+
+        .absolute-element {
+            position: absolute;
+            top: 10px;
+            /* 10px from the top of the inner container */
+            left: 10px;
+            /* 10px from the right of the inner container */
+            background-color: lightgray;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 
+        1. Removed from Normal Flow: The element is removed from the normal document flow, 
+        so it does not affect the positioning of other elements and vice versa.
+
+        2. Offset Properties: You can use top, right, bottom, and left properties to specify the 
+        exact position of the element.
+
+        3. Positioned Relative to Closest Ancestor: The element is positioned relative to the 
+        nearest ancestor with a position value other than static. If no such ancestor exists, 
+        it will be positioned relative to the initial containing block.
+    -->
+
+
+    <div class="outer-container"> <!-- position:relative-->
+        <div class="inner-container"> <!-- position:fixed-->
+            <div class="most-inner-container"> <!-- position:static-->
+                <div class="absolute-element">I am an absolute element</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

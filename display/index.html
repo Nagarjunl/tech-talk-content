@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+
+    <style>
+        .inline-example {
+            display: inline;
+            padding: 10px;
+            /* Only affects the space within the element, not around it */
+            background-color: lightblue;
+        }
+
+        .inline-block-example {
+            display: inline-block;
+            width: 150px;
+            height: 50px;
+            margin: 10px;
+            padding: 10px;
+            background-color: lightgreen;
+        }
+
+        .display-block-example {
+            display: block;
+            width: 100px;
+            height: 160px;
+            padding: 18px;
+            background-color: lightgreen;
+            border: 1px dashed blue;
+            ;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 
+        display:inline - 
+            * Width and Height: You cannot set the width or height explicitly on inline elements. Their dimensions are dictated by their content.
+            * Margin and Padding: Top and bottom margins and paddings are applied but do not affect the position of other elements, meaning they don't push elements vertically. 
+    -->
+
+    <div>This is an inline element. This is an inline element. This is an inline element. This is an inline element.
+        This is an inline element. This is an inline element. This is an inline element. This is an inline element.
+        <span class="inline-example"> This is an inline element.</span>
+        <span class="inline-example"> This is an inline element.</span>
+        This is an inline element. This
+        is an inline element. This is an inline element. This is an inline element. This is an inline element. This is
+        an inline element. This is an inline element. This is an inline element.
+    </div>
+
+    <br /><br />
+    <!-- 
+        display:inline-block - 
+           * Width and Height: You can set the width and height explicitly on inline-block elements.
+           * Margin and Padding: Top, bottom, left, and right margins and paddings are respected and affect the layout around the element.
+     -->
+
+    <div>This is an inline element. This is an inline element. This is an inline element. This is an inline element.
+        This is an inline element. This is an inline element. This is an inline element. This is an inline element.
+        <span class="inline-block-example"> This is an inline element. </span>
+        <span class="inline-block-example"> This is an inline element. </span>
+
+        This is an inline element. This
+        is an inline element. This is an inline element. This is an inline element. This is an inline element. This is
+        an inline element. This is an inline element. This is an inline element.
+    </div>
+
+    <br /><br />
+
+    <div>This is an inline element. This is an inline element. This is an inline element. This is an inline element.
+        This is an inline element. This is an inline element. This is an inline element. This is an inline element.
+        <span class="display-block-example"> This is an inline element. </span>
+        <span class="display-block-example"> This is an inline element. </span>
+        This is an inline element. This
+        is an inline element. This is an inline element. This is an inline element. This is an inline element. This is
+        an inline element. This is an inline element. This is an inline element.
+    </div>
+
+</body>
+
+</html>

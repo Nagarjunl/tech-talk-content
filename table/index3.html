@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .border {
+            border: 1px solid black;
+        }
+
+        .div-table {
+            display: table;
+            border-collapse: separate;
+            box-sizing: border-box;
+            text-indent: initial;
+            unicode-bidi: isolate;
+            border-spacing: 2px;
+            border-color: gray;
+        }
+
+        .div-tbody {
+            display: table-row-group;
+            vertical-align: middle;
+            unicode-bidi: isolate;
+            border-color: inherit;
+        }
+
+        .div-tr {
+            display: table-row;
+            vertical-align: inherit;
+            unicode-bidi: isolate;
+            border-color: inherit;
+        }
+
+        .div-td {
+            display: table-cell;
+            vertical-align: inherit;
+            unicode-bidi: isolate;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Cellspacing</h2>
+    <p>Change the space between the cells with the border-spacing property.</p>
+
+    <div class="div-table border">
+        <div class="div-body">
+            <div class="div-tr">
+                <div class="div-td border">Firstname</div>
+                <div class="div-td border">Lastname</div>
+                <div class="div-td border">Age</div>
+            </div>
+            <div class="div-tr">
+                <div class="div-td">Firstname</div>
+                <div class="div-td">Lastname</div>
+                <div class="div-td">Age</div>
+            </div>
+
+            <div class="div-tr">
+                <div class="div-td">Firstname</div>
+                <div class="div-td">Lastname</div>
+                <div class="div-td">Age</div>
+            </div>
+
+            <div class="div-tr">
+                <div class="div-td">Firstname</div>
+                <div class="div-td">Lastname</div>
+                <div class="div-td">Age</div>
+            </div>
+
+        </div>
+
+</body>
+
+</html>
