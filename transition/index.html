@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Timing Functions</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            gap: 10px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 10px;
+            line-height: 100px;
+            text-align: center;
+            transition: all 1s;
+            /* transition: width 1s, background-color 2s; */
+        }
+
+        .box:hover {
+            width: 200px;
+            background-color: lightcoral;
+        }
+
+        .ease {
+            transition-timing-function: ease;
+        }
+
+        .ease-in {
+            transition-timing-function: ease-in;
+        }
+
+        .ease-out {
+            transition-timing-function: ease-out;
+        }
+
+        .ease-in-out {
+            transition-timing-function: ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box ease">ease</div>
+    <div class="box ease-in">ease-in</div>
+    <div class="box ease-out">ease-out</div>
+    <div class="box ease-in-out">ease-in-out</div>
+</body>
+
+</html>

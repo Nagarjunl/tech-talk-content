@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate Example</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        .rotate.box {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            transition: transform 0.5s ease;
+        }
+
+        .rotate.box:hover {
+            transform: rotate(45deg);
+        }
+
+        /* Scale */
+        .scale.box {
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            transition: transform 0.5s ease;
+        }
+
+        .scale.box:hover {
+            transform: scale(2);
+        }
+
+        /* Translate */
+        .translate.box {
+            width: 100px;
+            height: 100px;
+            background-color: lightcoral;
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.5s ease;
+        }
+
+        .translate.box:hover {
+            transform: translate(50px, 50px);
+            /* transform: translatex(50px); */
+            /* transform: translatey(50px); */
+        }
+
+        /* Skew */
+        .skew.box {
+            width: 100px;
+            height: 100px;
+            background-color: lightyellow;
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            transition: transform 0.5s ease;
+        }
+
+        .skew.box:hover {
+            transform: skew(10deg, 20deg);
+        }
+
+        /* Multiple */
+
+        .multiple.box {
+            width: 100px;
+            height: 100px;
+            background-color: lightpink;
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.5s ease;
+        }
+
+        .multiple.box:hover {
+            transform: rotate(45deg) scale(1.2) translate(20px, 20px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="animate__animated animate__backInRight"
+        style="position: absolute;top:50%; left:50%; animation-delay: 0.1s;">H</div>
+    <div class="animate__animated animate__backInRight"
+        style="position: absolute;top:50%; left:51%; animation-delay: 0.2s;">e</div>
+    <div class="animate__animated animate__backInRight"
+        style="position: absolute;top:50%; left:52%; animation-delay: 0.3s;">l</div>
+    <div class="animate__animated animate__backInRight"
+        style="position: absolute;top:50%; left:53%; animation-delay: 0.4s;">l</div>
+    <div class="animate__animated animate__backInRight"
+        style="position: absolute;top:50%; left:54%; animation-delay: 0.5s;">0</div>
+
+    <!-- <div class="rotate box">Rotate</div>
+    <div class="scale box">Scale</div>
+    <div class="box translate">Translate</div>
+    <div class="box skew">Skew</div>
+    <div class="box multiple">Multiple</div> -->
+
+
+</body>
+
+</html>
