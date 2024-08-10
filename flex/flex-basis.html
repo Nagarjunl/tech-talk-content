@@ -9,38 +9,37 @@
         .container {
             display: flex;
             flex-direction: row;
-            flex-wrap: wrap;
-            height: 600px;
-            width: 600px;
             border: 1px solid black;
-            /* align-items: center; */
+            width: 100%;
         }
 
         .item {
             background-color: lightblue;
-            width: 100px;
+            width: 160px;
             height: 100px;
             margin: 10px;
             font-size: 20px;
+            flex: 1 1 1auto;
+            /* flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: auto; */
         }
     </style>
 </head>
 
 <body>
+
+
+    <h1> flex-basis </h1>
     <div class="container">
-        <div class="item">1</div>
+        <div class="item" style="flex-basis: 300px;">1</div>
         <div class="item">2</div>
         <div class="item">3</div>
         <div class="item">4</div>
         <div class="item">5</div>
         <div class="item">6</div>
-        <div class="item">7</div>
-        <div class="item">8</div>
-        <div class="item">9</div>
-        <div class="item">10</div>
-        <div class="item">11</div>
-        <div class="item">12</div>
     </div>
+
 </body>
 
 </html>

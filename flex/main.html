@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Example</title>
+    <style>
+        .container {
+            display: flex;
+
+
+            flex-direction: row;
+            /* flex-direction: row | row-reverse | column | column-reverse; */
+
+            flex-wrap: wrap;
+            /* flex-wrap: nowrap | wrap | wrap-reverse; */
+
+            /* 
+                This is a shorthand for the flex-direction and flex-wrap properties,
+                which together define the flex container’s main and cross axes. 
+
+                The default value is row nowrap 
+             */
+            /* flex-flow: column wrap; */
+
+
+            justify-content: flex-start;
+            /* justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe; */
+
+            align-items: center;
+            /* align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe; */
+
+            /* align-content: flex-start; */
+            /* align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe; */
+
+            border: 1px solid black;
+
+            /* gap: 10px; */
+
+            /* gap: 10px 20px; */
+            /* row-gap column gap */
+
+            /* row-gap: 10px;
+            column-gap: 20px; */
+        }
+
+        .item {
+            background-color: lightblue;
+            width: 100px;
+            /* width: calc(33.33333% - 20px); */
+            height: 100px;
+            margin: 10px;
+            font-size: 20px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* order:  5; */
+            /* default is 0 */
+
+            /* flex-grow: 5 */
+            /* default 0 */
+
+            /* flex-shrink: 3; */
+            /* default 1 */
+
+            /* flex-basis: auto; */
+            /* default auto */
+
+            /* flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ] */
+
+            /* align-self: auto | flex-start | flex-end | center | baseline | stretch; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+        <div class="item">12</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        html {
+            font-size: 62.5%;
+            /* changes a default 16px font size to 10px */
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            /* font size = 24px */
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            /* font size = 16px */
+        }
+
+        h6 {
+            font-size: 1.2rem;
+            /* font size = 12px */
+        }
+
+        div {
+            font-size: 3rem;
+            border: 1px solid black;
+        }
+
+        #top-div {
+            font-size: 2rem;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- rem -root-em -->
+    <p>The font-size of this document is 62.5% = 10px.</p>
+
+    <div id="top-div">
+        The font-size of this div element is 2rem, which translates to 2 x the browser's font size.
+        <div>The font-size of this div element is 3rem. It also shows that it does not inherit from its parent element
+            font size.</div>
+    </div>
+
+    <h1> Heading One</h1>
+    <h2> Heading Two</h2>
+    <h6> Heading Six</h6>
+
+
+</body>
+
+</html>
