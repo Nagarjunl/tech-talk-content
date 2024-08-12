@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Grid 2</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "sidebar main main"
+                "sidebar widget1 widget2"
+                "footer footer footer";
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: auto 1fr auto auto;
+            gap: 10px;
+            height: 100vh;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: #6c757d;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+        }
+
+        .main-content {
+            grid-area: main;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        .widget1 {
+            grid-area: widget1;
+            background-color: #ffc107;
+            padding: 20px;
+        }
+
+        .widget2 {
+            grid-area: widget2;
+            background-color: #28a745;
+            padding: 20px;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: #6c757d;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-areas:
+                    "header"
+                    "main"
+                    "widget1"
+                    "widget2"
+                    "widget3"
+                    "sidebar"
+                    "footer";
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="header">Header</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="main-content">Main Content</div>
+        <div class="widget1">Widget 1</div>
+        <div class="widget2">Widget 2</div>
+        <div class="footer">Footer</div>
+    </div>
+
+</body>
+
+</html>

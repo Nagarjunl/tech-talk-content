@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Area</title>
+    <style>
+        .item-a {
+            grid-area: header;
+            /* padding: 20px; */
+            background-color: red;
+
+        }
+
+        .item-b {
+            grid-area: main;
+            /* padding: 20px; */
+            background-color: green;
+        }
+
+        .item-c {
+            grid-area: sidebar;
+            /* padding: 20px; */
+            background-color: blue;
+        }
+
+        .item-d {
+            grid-area: footer;
+            /* padding: 20px; */
+            background-color: yellow;
+        }
+
+
+        /* sizing keywors :  auto minmax min-content */
+        .container {
+            display: grid;
+
+            /* grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 100px 50px 30px; */
+
+            grid-template-columns: 50px 50px 50px 50px;
+            grid-template-rows: 1fr;
+            grid-template-areas:
+                "header header header header"
+                "main main . sidebar"
+                "footer footer footer footer";
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="item-a">
+            header
+        </div>
+        <div class="item-b">
+            main
+        </div>
+        <div class="item-c">
+            sidebar
+        </div>
+        <div class="item-d">
+            footer
+        </div>
+    </div>
+</body>
+
+</html>
