@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dense</title>
+
+    <style>
+        .grid-row-dense,
+        .grid-column-dense {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-template-rows: repeat(3, 100px);
+            gap: 10px;
+        }
+
+        .grid-row-dense {
+            grid-auto-flow: row dense;
+        }
+
+        .grid-column-dense {
+            grid-auto-flow: column dense;
+        }
+
+        .item:nth-child(2) {
+            grid-column: span 2;
+        }
+
+        .item:nth-child(5) {
+            grid-row: span 2;
+        }
+
+        .item {
+            background-color: #76c7c0;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-row-dense">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+    <div style="margin-bottom: 100px;"></div>
+
+    <div class="grid-column-dense">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+</body>
+
+</html>

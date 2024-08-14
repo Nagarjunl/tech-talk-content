@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Masonary 3</title>
+
+    <style>
+        .masonry-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .grid-column {
+            display: grid;
+            grid-template-rows: masonry;
+            /* This will be available with subgrid support */
+            gap: 10px;
+        }
+
+        .item {
+            background-color: #76c7c0;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="masonry-grid">
+        <div class="grid-column">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+        <div class="grid-column">
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+        <div class="grid-column">
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
