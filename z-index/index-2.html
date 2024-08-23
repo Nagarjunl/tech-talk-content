@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index</title>
+
+    <style>
+        div {
+            position: absolute;
+            width: 75px;
+            height: 75px;
+            border-radius: 10px;
+            color: white;
+            padding: 5px;
+            text-align: right;
+        }
+
+        #first {
+            z-index: 3;
+            background-color: #FF5C35;
+            top: 10px;
+            left: 10px;
+        }
+
+        #second {
+            z-index: 2;
+            background-color: #192733;
+            top: 30px;
+            left: 30px;
+        }
+
+        #third {
+            z-index: 1;
+            background-color: #4FB06D;
+            top: 50px;
+            left: 50px;
+        }
+
+        #fourth {
+            z-index: auto;
+            /* 0 */
+            background-color: #ED2D40;
+            top: 70px;
+            left: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="first">1</div>
+    <div id="second">2</div>
+    <div id="third">3</div>
+    <div id="fourth">4</div>
+</body>
+
+</html>
