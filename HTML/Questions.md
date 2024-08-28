@@ -31,7 +31,7 @@
 
 16. Define multipart form data?
 
-17. Differences between **<div>** & "<span>" tag?
+17. Differences between **div** & **span** tag?
 
 18. How can we create a nested webpage in HTML?
 
@@ -61,7 +61,7 @@
 32. What is Place Holder in Form?
 33. What is the useage required attribute?
 34. What is the use of <meta> tags in HTML?
-35. What are the simple example of <meta> (title, keywords, description)?
+35. What are the simple example of <**meta**> (title, keywords, description)?
 36. How to add/load external CSS files to HTML?
 
 
