@@ -25,15 +25,20 @@ https://www.interviewbit.com/css-interview-questions/
 18. What are the properties of flexbox?
 19. Difference between CSS grid vs flexbox?
 20. Explain CSS position property?
-21. How to center align a div?
-22. Can you name the four types of @media properties
-23. What is the grid system?
-24. What are the different ways to hide the element using CSS?
-25. What does the :root pseudo-class refer to?
-26. What does Accessibility (a11y) mean?
-27. What do CSS Custom properties variables mean?
-28. What does * { box-sizing: border-box; } do? What are its advantages?
-29. What does !important mean in CSS?
-30.  How will you fix browser-specific styling issues?
+21. Difference between absolute vs relative in position property?
+22. How to center align a div?
+23. Can you name the four types of @media properties
+24. How do we implement a responsive design?
+25. what are all the break-points in screen size?
+26. What is the grid system?
+27. What are the different ways to hide the element using CSS?
+28. Difference between display:none and visibility:hidden?
+29. What does the :root pseudo-class refer to?
+30. What does Accessibility (a11y) mean?
+31. What do CSS Custom properties variables mean?
+32. What does * { box-sizing: border-box; } do? What are its advantages?
+33. What does !important mean in CSS?
+34. How will you fix browser-specific styling issues?
+35. What is th use of overflow?
 
    
