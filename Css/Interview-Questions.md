@@ -40,5 +40,10 @@ https://www.interviewbit.com/css-interview-questions/
 33. What does !important mean in CSS?
 34. How will you fix browser-specific styling issues?
 35. What is th use of overflow?
+36. How does this property work overflow: hidden?
+37. How is margin different from padding in CSS?
+38. What do you have to do to automatically number the heading values of sections and categories?
+39. How is the nth-child() different from nth of type selectors?
+40. Why do we need to use clear property along with floats in CSS?
 
    
