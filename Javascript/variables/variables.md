@@ -29,6 +29,7 @@ age = 40 // throws error - Uncaught TypeError: "age" is read-only
 <img width="318" alt="image" src="https://github.com/user-attachments/assets/09c3e74c-0941-41c0-9496-1955b6dac4de">
 
 
+## Declaration and Definition
 
 var age; // Declaration
 
