@@ -5,10 +5,6 @@
 3. const
 
 
-
-
-
-
 ## Use of `var` keyword
 
 var age = 35;
@@ -30,13 +26,15 @@ age = 40;  // Allows you to change the value - now age variables value is 40;
 const age = 35;
 
 age = 40 // throws error - Uncaught TypeError: "age" is read-only
+<img width="318" alt="image" src="https://github.com/user-attachments/assets/09c3e74c-0941-41c0-9496-1955b6dac4de">
 
 
-var age; //Declaration
 
-var age = 20; //Declaration + Definition
+var age; // Declaration
 
-age = 30; //Mutate the original value
+var age = 20; // Declaration + Definition
+
+age = 30; // Mutate the original value
 
 var name = 'Sathish'; // or "Sathish"
 
