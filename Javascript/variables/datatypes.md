@@ -4,7 +4,7 @@
 1. Number
 2. String
 3. Boolean
-4. Undefined
+4. Undefined (only for Javascript engine)
 5. Null
 6. Bigint
 7. Symbol
