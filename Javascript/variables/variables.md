@@ -19,6 +19,7 @@ age = 40 // Allows you to change the value - now age variables value is 40;
 ## Use of `let` keyword
 
 let age = 35;
+
 age = 40;  // Allows you to change the value - now age variables value is 40;
 
 <img width="989" alt="image" src="https://github.com/user-attachments/assets/9502e2a0-5e69-4802-8ee0-f3bff58c5c2e">
@@ -27,6 +28,7 @@ age = 40;  // Allows you to change the value - now age variables value is 40;
 
 ## Use of `const` keyword
 const age = 35;
+
 age = 40 // throws error - Uncaught TypeError: "age" is read-only
 
 
