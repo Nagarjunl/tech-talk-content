@@ -21,7 +21,7 @@ let age = 35;
 age = 40;  // Allows you to change the value - now age variables value is 40;
 
 
-## Use of constants
+## Use of `const` keyword
 const age = 35;
 age = 40 // throws error - Uncaught TypeError: "age" is read-only
 
