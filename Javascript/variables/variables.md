@@ -12,6 +12,7 @@
 ## Use of `var` keyword
 
 var age = 35;
+
 age = 40 // Allows you to change the value - now age variables value is 40;
 
 
