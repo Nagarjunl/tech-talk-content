@@ -19,6 +19,7 @@ console.log(marks[4]);
 
 
 ## Array of objects
+<img width="299" alt="image" src="https://github.com/user-attachments/assets/8e3fa212-1b7e-4613-8989-1ff375d7eb33">
 
 const students = [
   {
