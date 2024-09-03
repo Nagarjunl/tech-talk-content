@@ -1,3 +1,31 @@
+# Ways to declare variables
+
+1. var
+2. let
+3. const
+
+
+
+
+
+
+## Use of `var` keyword
+
+var age = 35;
+age = 40 // Allows you to change the value - now age variables value is 40;
+
+
+## Use of `let` keyword
+
+let age = 35;
+age = 40;  // Allows you to change the value - now age variables value is 40;
+
+
+## Use of constants
+const age = 35;
+age = 40 // throws error - Uncaught TypeError: "age" is read-only
+
+
 var age; //Declaration
 
 var age = 20; //Declaration + Definition
