@@ -17,3 +17,34 @@ console.log(marks[4]);
 3. To access the length of the `Array` , we can use `length` property
   ``marks.length``
 
+
+## Array of objects
+
+const students = [
+  {
+    name: "sathish",
+    age: 35,
+    isMarried: true,
+    address: {
+      street: "main",
+      door: "23/5",
+      state: "Tamil Nadu",
+      pincode: 600001,
+    },
+    marks: [84, 85, 35, 68, 43],
+  },
+  {
+    name: "ranjith",
+    age: 20,
+    isMarried: false,
+    address: {
+      street: "second",
+      door: "2/5",
+      state: "Karnataka",
+      pincode: 560001,
+    },
+    marks: [84, 85, 35, 68, 43],
+  },
+];
+
+console.log(students[1].address.state);
