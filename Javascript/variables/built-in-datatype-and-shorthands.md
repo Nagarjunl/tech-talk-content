@@ -7,7 +7,7 @@
     
 ## Accessing `String` datatype methods
 
-    console.log(name.split(''))
+    name.split('')
 
 # Simplified example of Class and Object creation
 <img width="715" alt="image" src="https://github.com/user-attachments/assets/58183719-f72b-444b-b692-204cc45eeb98">
