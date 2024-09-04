@@ -40,3 +40,7 @@
     var name = 'Sathish'; // or "Sathish"
     
     var eligibleToVote = true; // or false,  1 - is equalent to true and 0 -is equalent to false
+
+##  =(assignment) operator used to assign the value to variables
+        variablename = value; 
+  A value can be any primitive or non-primitive data types.
