@@ -54,6 +54,5 @@ console.log(students[1].address.state);
 ## Checking `array` type
 
 
-1.Array.isArray([]) //true
-
+1. Array.isArray([]) //true - right way to check the type of the array
 2. typeof [] // object - `typeof` is not the right solution to check the array
