@@ -1,4 +1,4 @@
-# Ways to declare variables
+# Different Javascript `keywords` to declare variables
 
 1. var
 2. let
