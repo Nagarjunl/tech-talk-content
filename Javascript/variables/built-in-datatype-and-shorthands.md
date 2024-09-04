@@ -78,3 +78,7 @@
     ope.subtract(); // 8
     ope2.subtract(); // 15
     ope2.multiply(); //100
+
+## Reference
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/class
