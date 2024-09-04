@@ -49,3 +49,11 @@ const students = [
 ];
 
 console.log(students[1].address.state);
+
+
+## Checking `array` type
+
+
+1.Array.isArray([]) //true
+
+2. typeof [] // object - `typeof` is not the right solution to check the array
