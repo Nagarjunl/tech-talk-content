@@ -23,4 +23,30 @@ let person = {
 4. To mutate the value, we can use the same dot(.) notation(prefered)
 5. We can use [] to access or mutate the value
 
+## Object with multiple types and functions
+
+    let name = 'name';
+    const obj = {
+      name: 'sathish',
+      marks: [45,55,67],
+      address: {
+        pincode: 560001,
+      },
+      show: function show() {
+        console.log(this.name);
+      },
+      age: 35,
+      isMarried: true,
+      dob: new Date('10/09/1990')
+    }
+    
+    console.log(obj.name); // 'sathish'
+    console.log(obj[name]); // 'sathish'
+    
+    console.log(obj.name.toUpperCase()) // "SATHISH"
+    
+    
+    console.log(obj.show()) // "sathish"
+    
+    console.log(obj.dob.getMonth()) //09
 
