@@ -24,4 +24,7 @@
 20. {name: null}.name // object
 21. {}.name // undefined
 
+22. <img width="465" alt="image" src="https://github.com/user-attachments/assets/08458bd0-9c9e-4e68-b1e8-aeaf612d943a">
+
+
 Note:- function is pending
