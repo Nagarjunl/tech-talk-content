@@ -4,10 +4,11 @@
 1. Number
 2. String
 3. Boolean
-4. Undefined (only for Javascript engine)
-5. Null
-6. Bigint
-7. Symbol
+4. Date
+5. Undefined (only for Javascript engine)
+6. Null
+7. Bigint
+8. Symbol
 
 ##  Non - Primitive DataTypes
 1. Array - [] - `index based` values
