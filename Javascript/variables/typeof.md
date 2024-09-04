@@ -4,7 +4,7 @@
   
 1. ""  //string
 2. '' // string
-3. []  // array
+3. []  // object
 4. {} // object
 5. 23 // number
 6. .45 // number
@@ -16,7 +16,7 @@
 12. "true" // string
 13. "false" // string
 14. 0  // number
-15. [4,5] // array
+15. [4,5] // object
 16. {name: 'sa'} // object
 17. {name: 'sa'}.name // string
 18. {name: 1}.name // number
@@ -24,4 +24,4 @@
 20. {name: null}.name // object
 21. {}.name // undefined
 
-Note function is pending
+Note:- function is pending
