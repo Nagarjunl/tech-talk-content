@@ -35,7 +35,7 @@
     
     var age = 20; // Declaration + Definition
     
-    age = 30; // Mutate the original value
+    age = 30; // Mutating/modifying/changing/updating the original value
     
     var name = 'Sathish'; // or "Sathish"
     
