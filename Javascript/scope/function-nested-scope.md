@@ -39,5 +39,6 @@
         
         sayHello();
 
+## Code execution, memory creation and variable/function reference in specific scopes
 
 <img width="996" alt="image" src="https://github.com/user-attachments/assets/25a0a8f3-42ce-4815-b3bf-4edbe3264424">
