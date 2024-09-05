@@ -1,9 +1,11 @@
 # Functions
 
+Functions are callable.
+
 ## Types
 
 1. ES5 function
-2. Function expression or anonymous function
+2. Function expression or an anonymous function
 3. ES6 arrow function
 
 ## Syntax
@@ -12,7 +14,7 @@
    //function-body
    }
 
-2. function `<function-name>`(one-or-more-params separeted by commas) {
+2. function `<function-name>`(one-or-more-params separated by commas) {
 
    // function-body
 
