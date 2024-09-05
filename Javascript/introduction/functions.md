@@ -28,18 +28,19 @@ Functions are callable.
 
 ### Function with no paremeters(params)
 
-1.       function log() {
+       function log() {
            console.warn('logging'); // {} - function-body
          }
 
 ### Invoking the `log` function with no parameters
 
     log()
+### Function with one or more parameters
 
-2.                   function sum(a, b) { //(a,b)- parameters
+       function sum(a, b) { //(a,b)- parameters
               //single-responsibility
               console.log(a+b)
-            }
+         }
 
 ### Invoking the `sum` function with `two` parameters
 
