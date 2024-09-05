@@ -15,7 +15,7 @@
     
     sayHello();
 
-## Code execuetion, memory creation and accessing its scope
+## Code execuetion, memory creation and accessing in its specific scope
 
 <img width="1164" alt="image" src="https://github.com/user-attachments/assets/45e2f55a-f9d8-404e-b7d5-cccbe1a254c4">
 
@@ -39,6 +39,6 @@
         
         sayHello();
 
-## Code execution, memory creation and variable/function reference in specific scopes
+## Code execution, memory creation and variable/function reference in its specific scopes
 
 <img width="996" alt="image" src="https://github.com/user-attachments/assets/25a0a8f3-42ce-4815-b3bf-4edbe3264424">
