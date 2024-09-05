@@ -16,9 +16,9 @@ Functions are callable.
 
 2. function `<function-name>`(one-or-more-params separated by commas) {
 
-   // function-body
+         // function-body
 
-}
+    }
 
 ## Invoking the function using `()`
 
