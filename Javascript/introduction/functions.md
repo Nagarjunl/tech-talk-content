@@ -28,9 +28,9 @@ Functions are callable.
 
 ### Function with no paremeters(params)
 
-1.                   function log() {
-        console.warn('logging'); // {} - function-body
-    }
+1.       function log() {
+           console.warn('logging'); // {} - function-body
+         }
 
 ### Invoking the `log` function with no parameters
 
