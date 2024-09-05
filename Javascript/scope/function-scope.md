@@ -22,7 +22,7 @@
 
 ## After completion of `person` function
 
-Note: Once function completes its execution, its removed from the call stack and its memory. Not the function declaration in the global scope
+Note: Once function completes its execution, its removed from the `call stack` and its `memory`. Not the function declaration in the `global scope`
 
 <img width="928" alt="image" src="https://github.com/user-attachments/assets/1cffa151-35b0-4b1d-b8d0-6476e909d045">
 
