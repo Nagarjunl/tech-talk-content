@@ -1,6 +1,6 @@
 # What is the purpose of `Variables`
 
-1. Store the value in memory
+1. Stores the value in memory
 2. Later reference it in some other place in the code
 
 ## Different Javascript `keywords` to declare variables
