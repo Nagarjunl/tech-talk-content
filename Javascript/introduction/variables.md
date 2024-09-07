@@ -2,6 +2,7 @@
 
 1. Stores the value in memory
 2. Later reference it in some other place in the code
+3. Later we can change the value of the varibale on in its scope and through its children scopes.
 
 ## Different Javascript `keywords` to declare variables
 
