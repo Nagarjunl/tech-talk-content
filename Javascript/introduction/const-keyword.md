@@ -54,4 +54,4 @@ const `<varibale-name>` = `<value>`
          person.name = "Prabu King" // valid mutation for const objects
          
          
-    For `Array` and `Object` data types, const allows you to change the values of the index and key respectively. Not allows the new assignment to the variable
+    For `Array` and `Object` data types, `const` allows you to change the values of the index and key respectively. Not allows the new assignment to the variable
