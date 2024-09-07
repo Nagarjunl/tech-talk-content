@@ -22,7 +22,17 @@ let `<varibale-name>` = `<value>`
          let name = "foo"
          }
    
-4. `let` keyword does not support the access to the variables before declaration
+
+4. `let` variable declared inside a block scope won't be available in `outer scope`
+
+         {
+               let name = "foo"
+         }
+         console.log(name) // Reference Error : name is not defined
+            
+      
+     
+6. `let` keyword does not support the access to the variables before declaration
 
          console.log(age);
          let age = 24;
