@@ -38,4 +38,19 @@ const `<varibale-name>` = `<value>`
          const age = 24;
     
 8.  `const` keyword allows you change the properties of Array/Object properties(index/key). But doesn't allow the new assignment
-       
+
+             const marks = [80, 73, 80, 81, 98]
+
+         marks[0] = 85 // Valid mutation for const array
+         marks = [] // results in error
+         
+         
+         const person = {
+           name: "Prabu",
+           age: 30,
+         }
+         
+         person = {} // Results in error
+         person.name = "Prabu King" // valid mutation for const objects
+         
+         //for Array and Object data types, const allows you to change the value of the index/key. Not allows the new assignment to the variable
