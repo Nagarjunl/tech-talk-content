@@ -39,8 +39,8 @@ const `<varibale-name>` = `<value>`
     
 8.  `const` keyword allows you change the properties of Array/Object properties(index/key). But doesn't allow the new assignment
 
-             const marks = [80, 73, 80, 81, 98]
-
+         const marks = [80, 73, 80, 81, 98]
+         
          marks[0] = 85 // Valid mutation for const array
          marks = [] // results in error
          
