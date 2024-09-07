@@ -24,7 +24,7 @@ const `<varibale-name>` = `<value>`
            const name = "foo";
          }
 
-5.  `const` variable declared inside a block scope won't be available in its `outer scope`
+5.  `const` variable declared inside a block scope won't be available outside of its `scope`
 
          {
                const name = "foo";
