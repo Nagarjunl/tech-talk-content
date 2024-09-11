@@ -1,5 +1,6 @@
 average(2, 3);
 function average(a, b) {
+  // Named function (ES5)
   console.log((a + b) / 2);
 }
 

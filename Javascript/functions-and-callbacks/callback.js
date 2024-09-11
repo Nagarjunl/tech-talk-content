@@ -18,3 +18,12 @@ function functionAsParamWithArguments(callBack) {
 functionAsParamWithArguments((name, age) => {
   console.log(name, age);
 });
+
+function callBackWithNamedFunctionAsParam(callbackFn) {
+  console.log(callbackFn);
+  callbackFn();
+}
+
+callBackWithNamedFunctionAsParam(function sayHello(name) {
+  console.log("SayHello");
+});
