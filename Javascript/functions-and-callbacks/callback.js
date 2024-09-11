@@ -10,20 +10,20 @@ functionAsParam(function () {
   console.log("Passing function as parameter using function expression");
 });
 
-function functionAsParamWithArguments(callBack) {
+function functionAsParamWithArguments(a) {
   //callback = (name, age) => console.log(name);
-  callBack("Sathish", 24);
+  a("Sathish", 24);
 }
 
 functionAsParamWithArguments((name, age) => {
   console.log(name, age);
 });
 
-function callBackWithNamedFunctionAsParam(callbackFn) {
-  console.log(callbackFn);
-  callbackFn();
-}
+const callBackWithNamedFunctionAsParam = (callback, name) => {
+  console.log(callback);
+  callback(name);
+};
 
 callBackWithNamedFunctionAsParam(function sayHello(name) {
   console.log("SayHello " + name);
-});
+}, "Nagarjun");
