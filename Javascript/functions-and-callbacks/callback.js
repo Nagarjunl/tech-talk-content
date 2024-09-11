@@ -25,5 +25,5 @@ function callBackWithNamedFunctionAsParam(callbackFn) {
 }
 
 callBackWithNamedFunctionAsParam(function sayHello(name) {
-  console.log("SayHello");
+  console.log("SayHello " + name);
 });
