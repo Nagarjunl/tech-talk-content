@@ -11,7 +11,7 @@
 7. etc...
 
 Refer MDN for available list of Array methods and thier syntax.
-[text](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+[MDN Link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 ## Interview questions
 
