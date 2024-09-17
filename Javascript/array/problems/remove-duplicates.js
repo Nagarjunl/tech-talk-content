@@ -1,5 +1,5 @@
 const values = [24, 35, 45, 23, 24, 45];
-
+//using for each
 function removeDuplicates(array) {
   let newArray = [];
   //use for loop
@@ -12,9 +12,12 @@ function removeDuplicates(array) {
 }
 
 console.log(removeDuplicates(values));
-
+//using filter method
 console.log(
   values.filter(function (element, index, array) {
     return array.indexOf(element) === index;
   })
 );
+
+//using set
+console.log(new Set(values));
