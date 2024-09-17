@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form submit event example</title>
+  </head>
+  <body>
+    <form action="" method="get">
+      <div>
+        <label for="firstName">First Name</label>
+        <input
+          type="text"
+          name="firstName"
+          placeholder="Enter your first name here"
+        />
+      </div>
+      <div>
+        <label for="lastName">Last Name</label>
+        <input
+          type="text"
+          name="lastName"
+          placeholder="Enter your last name here"
+        />
+      </div>
+      <div>
+        <label for="country">Country</label>
+        <select name="country">
+          <option value="india">India</option>
+          <option value="pakistan">Pakistan</option>
+          <option value="china">China</option>
+        </select>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    <script type="text/javascript" src="./prevent-default.js"></script>
+  </body>
+</html>
