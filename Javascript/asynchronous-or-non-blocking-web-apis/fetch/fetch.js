@@ -1,22 +1,20 @@
-const res = fetch("https://jsonplaceholder.typicode.com/todos/");
-
-res
+fetch("http://localhost:3000")
   .then((res) => {
     console.log(res);
     return res.json();
   })
   .then((json) => {
     console.log(json);
-    const todos = document.querySelector("#todos");
-    json.forEach((element, index) => {
-      const p = document.createElement("p");
-      p.textContent = `${index + 1} ${element.title}`;
-      p.style.color = element.completed ? "green" : "red";
-      todos.appendChild(p);
-    });
+    const p = document.createElement("p");
+    p.textContent = json.address.location.state;
+    document.querySelector("body").appendChild(p);
   })
   .catch(function (err) {
     console.log("error", err);
+    console.log("failed to fetch data");
+    const p = document.createElement("p");
+    p.textContent = err.message;
+    document.querySelector("body").appendChild(p);
   });
 
 console.log("1");
