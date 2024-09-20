@@ -25,6 +25,7 @@ app.get("/", (req, res) => {
 
 const UserRoute = require("./routes/users");
 app.use("/user", UserRoute);
+app.use(cors());
 
 app.listen(3000, () => {
   console.log("Server is listening on port 3000");
