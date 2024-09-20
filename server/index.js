@@ -1,31 +1,31 @@
 const express = require("express");
-var cors = require("cors");
-
+const bodyParser = require("body-parser");
 const app = express();
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+const dbConfig = require("./config/database.config.js");
+const mongoose = require("mongoose");
 
-app.use(cors());
+mongoose.Promise = global.Promise;
+mongoose
+  .connect(dbConfig.url, {
+    useNewUrlParser: true,
+  })
+  .then(() => {
+    console.log("Databse Connected Successfully!!");
+  })
+  .catch((err) => {
+    console.log("Could not connect to the database", err);
+    process.exit();
+  });
 
-app.use("/", async (req, res) => {
-  await new Promise((resolve) => setTimeout(resolve, 10000));
-  const result = {
-    address: {
-      location: {
-        state: "Tamil Nadu",
-      },
-    },
-  };
-  res.send({ ...result, message: "Success" });
-
-  // res.status(400).send({
-  //   message: "This is an error!",
-  //   ...result,
-  // });
+app.get("/", (req, res) => {
+  res.json({ message: "Hello Crud Node Express" });
 });
 
-function timeout(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
+const UserRoute = require("./routes/users");
+app.use("/user", UserRoute);
 
-app.listen(3000, (err, res) => {
-  console.log("listening on port 3000");
+app.listen(3000, () => {
+  console.log("Server is listening on port 3000");
 });
