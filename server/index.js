@@ -21,13 +21,14 @@ mongoose
     process.exit();
   });
 
+app.use(cors());
+
 app.get("/", (req, res) => {
   res.json({ message: "Hello Crud Node Express" });
 });
 
 const UserRoute = require("./routes/users");
 app.use("/user", UserRoute);
-app.use(cors());
 
 app.listen(3000, () => {
   console.log("Server is listening on port 3000");
