@@ -1,5 +1,4 @@
 class Person {
-  age = 22;
 
   constructor(name) {
     this.name = name;
@@ -9,12 +8,22 @@ class Person {
     console.log(this);
   }
 
+  getName() {
+    return this.name;
+  }
+
+  updateName(name) {
+    this.name = name;
+  }
+
   display() {
     console.log(this.name); //concatenation(+ operator for string only)
   }
 }
 
 const p = new Person("john");
+p.updateName("Rajesh");
+
 // {
 //     name: 'john',
 //     age: 22,

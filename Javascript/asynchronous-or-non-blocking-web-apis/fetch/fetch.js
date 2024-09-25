@@ -1,8 +1,11 @@
-fetch("http://localhost:3000")
-  .then((res) => {
-    console.log(res);
-    return res.json();
-  })
+const api = fetch("http://localhost:3000");
+
+console.log("Hai");
+
+api.then((res) => {
+  console.log(res);
+  return res.json();
+})
   .then((json) => {
     console.log(json);
     const p = document.createElement("p");
