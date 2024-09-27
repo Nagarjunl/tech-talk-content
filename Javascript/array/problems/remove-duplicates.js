@@ -21,3 +21,42 @@ console.log(
 
 //using set
 console.log(new Set(values));
+
+
+console.log("==================================");
+
+let arr = [24, 25, 25, 24, 26, 27];
+
+let newValues = new Set(arr);
+console.log(newValues);
+
+
+console.log("==================================");
+
+let nonDup = [];
+for (let i = 0; i < arr.length; i++) {
+  console.log(`${arr.indexOf(arr[i])} === ${i}`);
+  if (arr.indexOf(arr[i]) === i) {
+    nonDup.push(arr[i])
+  }
+}
+
+console.log(nonDup);
+
+console.log("==================================");
+
+console.log(arr.filter((element, index) => arr.indexOf(element) === index))
+
+console.log("==================================");
+
+let obj = {};
+for (let i = 0; i < arr.length; i++) {
+  if (obj[arr[i]] === undefined) {
+    obj[arr[i]] = arr[i];
+  }
+}
+
+console.log(obj);
+console.log(Object.keys(obj));
+console.log(Object.keys(obj).toString());
+console.log(Object.keys(obj).toString().split(","));
