@@ -36,6 +36,15 @@
        let person2 = person1;
        person2.address.state = 'Kerala';
        console.log(person1, person2);
+
+       let person1 = { name: 'john',
+                      address: {
+                        state: 'Tamil Nadu'  
+                      }
+                    };
+       let person2 = {...person1};
+       person2.address.state = 'Kerala';
+       console.log(person1, person2);
        
 ### Object.assign
 
